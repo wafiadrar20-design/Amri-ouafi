@@ -21,7 +21,7 @@ class UINode(Node):
         self.get_logger().info(f"Sending vel to {turtle} ...")
 
         t0 = time.time()
-        while time.time() - t0 < 1.0:   # لمدة ثانية واحدة
+        while time.time() - t0 < 1.0: 
             pub.publish(twist)
             time.sleep(0.1)
 
